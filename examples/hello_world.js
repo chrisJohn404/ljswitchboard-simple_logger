@@ -259,13 +259,13 @@ var app = new loggerApp();
 
 
 var loggerAppSteps = [
-	'initializeLogger',
-	'initializeDeviceManager',
-	'updateDeviceListing',
-	'configureLogger',
-	'startLogger',
-	'waitForLoggerToRun',
-	'closeDevices',
+	'initializeLogger',				// Performed at start-up
+	'initializeDeviceManager',		// Performed at start-up
+	'updateDeviceListing',			// Performed when configuring logger
+	'configureLogger',				// Performed when configuring logger
+	'startLogger',					// Performed when starting logger
+	'waitForLoggerToRun',			// Allowing the logger to run...
+	'closeDevices',					
 	'finish',
 ];
 loggerAppSteps.forEach(function(step) {
